@@ -1,0 +1,8 @@
+### GET weather information by CEP on Google Cloud Run
+GET https://goweather-109794580457.us-east1.run.app/weather/25030170
+Accept: application/json
+
+
+### GET weather information by CEP on local server
+GET http://localhost:8080/weather/25030170
+Accept: application/json

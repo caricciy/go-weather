@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: go-weather
+    hostname: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - gcr.io/fc-go-expert-467512/go-weather
+    env_file:
+      - ./.env
+    ports:
+      - 8080:8080

@@ -59,7 +59,7 @@ func (w *WeatherApiRepository) GetWeatherInfo(ctx context.Context, cep *entity.C
 		return nil, fmt.Errorf("failed to decode response: %w", err)
 	}
 
-	// Simulated response
+	
 	return &entity.WeatherInfo{
 		Celcius:    weatherData.Current.TempC,
 		Fahrenheit: weatherData.Current.TempF,

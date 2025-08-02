@@ -62,7 +62,6 @@ func (s *ViaCEPStore) GetCEP(ctx context.Context, cep string) (*entity.CEP, erro
 		return nil, fmt.Errorf("failed to decode response: %w", err)
 	}
 
-	// Simulated response
 	return &entity.CEP{
 		Localidade: cepData.Localidade,
 	}, nil
